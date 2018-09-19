@@ -1,0 +1,16 @@
+<%= form_with(model: @posts.comentario, local: true) do |form| %>
+
+  <p class ="form-group">
+    <%= form.label :autor %>
+    <%= form.text_field :autor %>
+  </p>
+
+  <p class ="form-group">
+    <%= form.label :conteudo %>
+    <%= form.text_field :conteudo, placeholder: "Escreva um comentario..." %>
+  </p>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @post.titulo %>
+</p>
+
+<p>
+  <strong>Conteudo:</strong>
+  <%= @post.conteudo %>
+</p>
+
+<p> 
+	<strong>Autor</strong>
+	<%= @post.autor %>
+</p>
+
+<% if user_signed_in? %>
+  <% if @post.autor.eql?(current_user.email) %>
+		<%= link_to 'Editar', edit_post_path(@post) %> 
+	<% end %>
+<% end %>
+
+<%= link_to 'Voltar', posts_path %>

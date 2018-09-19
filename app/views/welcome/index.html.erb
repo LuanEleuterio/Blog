@@ -1,0 +1,18 @@
+<h1>Bem-vindo ao Blog dos Estagiários</h1>
+<% if user_signed_in? %>
+<ul>
+	<th> -------------------------------------------------------</th>
+	<p>Usuário logado: <%= current_user.email %></p>
+	<p><%=link_to 'Fazer Log out', destroy_user_session_path, method: :delete %></p>
+	<th> -------------------------------------------------------</th>
+</ul>
+<%else %>
+<ul>
+	<li><%=link_to 'Criar conta', new_user_registration_path %> </li>
+	<li><%=link_to 'Fazer Log in', user_session_path %> </li>
+</ul>
+<% end %>
+
+<ul>
+	<li><%=link_to 'Ver postagens', posts_index_path %>	   </li>
+</ul>
