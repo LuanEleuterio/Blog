@@ -1,9 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+For execute the blog, it's necessary open the command terminal and go for the blog folder. 
+Use command 'rails s' or 'rails server' in terminal, and enter in browser the address 'localhost:3000'. 
+Ready, now you can see the blog.
 
 * Ruby version
 
