@@ -1,7 +1,7 @@
 # README
-
-For execute the blog, it's necessary open the command terminal and go for the blog folder. 
-Use command 'rails s' or 'rails server' in terminal, and enter in browser the address 'localhost:3000'. 
+You should allocate all files that are here in this repository in a only folder.
+After is necessary open the command terminal and go for the blog folder using the terminal. 
+Use command 'rails s' or 'rails server' inside the blog folder in terminal and then enter in browser the address 'localhost:3000'. 
 Ready, now you can see the blog.
 
 * Ruby version
